@@ -158,7 +158,7 @@ header {
   margin: auto;
 }
 
-#projects-ctr div {
+.project-preview {
   height: 38vw;
   max-height: 135px;
   width: 41vw;
@@ -166,6 +166,12 @@ header {
   margin: auto;
   border-radius:2px;
   border: 2px solid #1B5E20;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#projects-ctr div:nth-child(1) {
+  background-image: url('../assets/images/group-image-2.jpeg');
 }
 
 @media only screen and (min-width: 475px) {
@@ -176,7 +182,7 @@ header {
   max-width: 580px;
 }
 
-  #projects-ctr div {
+  .project-preview {
     height: 26.5vw;
     max-height: 158px;
     width: 29.5vw;
@@ -195,7 +201,7 @@ header {
     max-width: 860px;
   }
 
-  #projects-ctr div{
+  .project-preview {
     height: 17vw;
     max-height: 215px;
     width: 21vw;
@@ -525,30 +531,34 @@ footer {
   padding: 12px;
 }
 
-#footer-ctr div p {
+#footer-ctr div * {
+  margin: auto;
   text-align: center;
 }
 
-#footer-ctr div * {
-  margin: auto;
+#footer-ctr div p, a {
+  font-size: 14px;
+}
 
+.footer-icon {
+  font-size: 32px;
+  cursor: pointer;
 }
 
 #footer-facebook-icon {
-  font-size: 32px;
   color: #3b5998;
-  cursor: pointer;
 }
 
 #footer-github-icon {
-  font-size: 32px;
-  cursor: pointer;
+
 }
 
 #footer-youtube-icon {
-  font-size: 32px;
   color: #ff0000;
-  cursor: pointer;
+}
+
+#footer-slack-icon {
+  color: ;
 }
 
 @media only screen and (min-width: 600px) {
