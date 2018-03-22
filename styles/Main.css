@@ -521,11 +521,34 @@ footer {
 #footer-ctr div {
   flex: 1;
   display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+#footer-ctr div p {
+  text-align: center;
 }
 
 #footer-ctr div * {
   margin: auto;
 
+}
+
+#footer-facebook-icon {
+  font-size: 32px;
+  color: #3b5998;
+  cursor: pointer;
+}
+
+#footer-github-icon {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+#footer-youtube-icon {
+  font-size: 32px;
+  color: #ff0000;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 600px) {
@@ -534,6 +557,19 @@ footer {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  #footer-facebook-icon {
+    /* font-size: 50px */
+  }
+
+  #footer-github-icon {
+    /* font-size: 50px */
+  }
+
+  #footer-youtube-icon {
+    /* font-size: 50px */
+  }
+}
 /*********************/
 
 .label {
